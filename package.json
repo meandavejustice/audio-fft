@@ -1,0 +1,30 @@
+{
+  "name": "audio-fft",
+  "version": "0.1.0",
+  "description": "utility for managing audio buffers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meandavejustice/audio-fft.git"
+  },
+  "keywords": [
+    "audio",
+    "buffers",
+    "webaudio",
+    "fft",
+    "visualization",
+    "playback",
+    "mp3",
+    "ogg",
+    "wav"
+  ],
+  "author": "meandave",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meandavejustice/audio-fft/issues"
+  },
+  "homepage": "https://github.com/meandavejustice/audio-fft"
+}
