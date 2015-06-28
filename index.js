@@ -11,6 +11,8 @@ module.exports = FFT;
 
 function FFT (ctx, options) {
   var module = this;
+  this.fillStyle = options.fillStyle || '#000000';
+  this.strokeStyle = options.strokeStyle || '#000000';
   this.canvas = options.canvas;
   this.onBeat = options.onBeat;
   this.offBeat = options.offBeat;
@@ -62,8 +64,7 @@ function process (module) {
         -(module.h / MAX_UINT8) * data[i]
       );
     }
-  }
-  else if (module.type === 'time') {
+  } else if (module.type === 'time') {
     module.input.getByteTimeDomainData(data);
     ctx.beginPath();
     ctx.moveTo(0, module.h / 2);
