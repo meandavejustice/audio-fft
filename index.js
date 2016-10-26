@@ -14,8 +14,6 @@ function FFT (ctx, options) {
   this.fillStyle = options.fillStyle || '#000000';
   this.strokeStyle = options.strokeStyle || '#000000';
   this.canvas = options.canvas;
-  this.onBeat = options.onBeat;
-  this.offBeat = options.offBeat;
   this.type = options.type || 'frequency';
   this.spacing = options.spacing || 1;
   this.width = options.width || 1;
@@ -24,11 +22,6 @@ function FFT (ctx, options) {
   this.proc = ctx.createScriptProcessor(256, 1, 1);
   this.data = new Uint8Array(this.input.frequencyBinCount);
   this.ctx = this.canvas.getContext('2d');
-
-  this.decay = options.decay || 0.002;
-  this.threshold = options.threshold || 0.5;
-  this.range = options.range || [0, this.data.length-1];
-  this.wait = options.wait || 512;
 
   this.h = this.canvas.height;
   this.w = this.canvas.width;
