@@ -1,6 +1,6 @@
 {
   "name": "audio-fft",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "visualize audio data on canvas with frequency or time",
   "main": "index.js",
   "scripts": {
