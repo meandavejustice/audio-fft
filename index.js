@@ -36,6 +36,11 @@ FFT.prototype.connect = function (node) {
   this.proc.connect(node);
 }
 
+FFT.prototype.disconnect = function () {
+  this.output.disconnect();
+  this.proc.connect();
+}
+
 function process (module) {
 
   var ctx = module.ctx;
